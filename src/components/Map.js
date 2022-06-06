@@ -6,12 +6,16 @@ import useSupercluster from "use-supercluster";
 
 function Map({center, eventData}) {
 
-// Set zoom use state
-const [zoom, setZoom] = useState(1);
+  // Set zoom use state
+  const [zoom, setZoom] = useState(1);
 
+
+  // Set map container
   return (
-    <div>
-      
+    <div className="map-container">
+      <GoogleMapReact>
+        bootstrapURLKeys={{key: }}
+      </GoogleMapReact>
     </div>
   );
 }
