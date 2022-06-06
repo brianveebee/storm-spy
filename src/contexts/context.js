@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState} from "react";
 
 const mainContext = React.createContext();
 
@@ -12,7 +12,7 @@ export function ContextProvider({children}){
   const [eventData, setEventData] = useState([]);
   // Stores the event of user selection
   const [selectedEvent, setSelectedEvent] = useState(null);
-  // Re-renders event markers updated user selection
+  // Re-renders event markers updated by user selection
   const [reRenderMarkers, setReReMarkers] = useState(null);
 
   // Store in an object
