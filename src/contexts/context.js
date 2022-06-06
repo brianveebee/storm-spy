@@ -15,6 +15,7 @@ export function ContextProvider({children}){
   // Re-renders event markers updated user selection
   const [reRenderMarkers, setReReMarkers] = useState(null);
 
+  // Store in an object
   const value = {
     eventData,
     setEventData,
