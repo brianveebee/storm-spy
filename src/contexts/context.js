@@ -13,7 +13,7 @@ export function ContextProvider({children}){
   // Stores the event of user selection
   const [selectedEvent, setSelectedEvent] = useState(null);
   // Re-renders event markers updated by user selection
-  const [reRenderMarkers, setReReMarkers] = useState(null);
+  const [reRenderMarkers, setReRendMarkers] = useState(null);
 
   // Store in an object
   const value = {
@@ -22,7 +22,7 @@ export function ContextProvider({children}){
     selectedEvent,
     setSelectedEvent,
     reRenderMarkers,
-    setReReMarkers
+    setReRendMarkers
   }
 
   return (
