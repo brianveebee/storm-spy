@@ -4,23 +4,22 @@ import React, {useState, useRef, useEffect} from "react";
 import GoogleMapReact from "google-map-react";
 import useSupercluster from "use-supercluster";
 
-function Map({center, eventData}) {
 
-  // Set zoom use state
+function Map({ center, eventData }) {
   const [zoom, setZoom] = useState(1);
 
-
-  // Set map container
   return (
-    <div className="map-container">
-      <GoogleMapReact>
-        bootstrapURLKeys={{key: }}
+    <div className="map">
+      <GoogleMapReact 
+        bootstrapURLKeys={{ key: "" }}
+        defaultZoom={ zoom }
+        defaultCenter={ center }
+      >
       </GoogleMapReact>
     </div>
   );
 }
 
-// Set default properties for Map
 Map.defaultProps = {
   center: {
     lat: 37.7749,
