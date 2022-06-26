@@ -1,13 +1,21 @@
-import React from 'react';
-import { Icon } from '@iconify/react';
+import React from "react";
+import { Icon } from "@iconify/react";
 
-
+// Render icons to map based on their id via https://eonet.gsfc.nasa.gov/api/v3/events
 function Marker({ onClick, id }) {
-  let renderIcon = null
-  
+  let renderIcon = null;
+  if(id === "wildfires") {
+    renderIcon = "emojione:fire";
+  } else if(id === "severeStorms") {
+      renderIcon = "emojione:cloud-with-lightning-and-rain"; 
+  } else if(id === "volcanoes") {
+      renderIcon = "emojione:volcano";
+  } else if(id === "seaLakeIce") {
+      renderIcon = "emojione:snowflake";
+  }
   return (
-    <div>
-
+    <div onClick={onClick}>
+      <Icon icon={renderIcon} className="icon-marker" />
     </div>
   );
 }
