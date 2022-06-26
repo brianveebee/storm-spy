@@ -3,7 +3,7 @@ import React, {useState, useRef, useEffect} from "react";
 // Import dependencies
 import GoogleMapReact from "google-map-react";
 import useSupercluster from "use-supercluster";
-
+import Marker from "./Marker";
 
 function Map({ center, eventData }) {
   const [zoom, setZoom] = useState(1);
