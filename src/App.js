@@ -7,6 +7,9 @@ import { useMainContext } from "./contexts/context";
 function App() {
   // Deconstruct object from context
   const { setEventData, reRenderMarkers } = useMainContext();
+  // Set useState for events
+  const [eventId, setEventId] = useState(1);
+  const [event, setEvent] = useState("");
   const [loading, setLoading] = useState(false);
 
   // Render event
@@ -14,10 +17,19 @@ function App() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      setLoading(true);
-      
+      const url = `/.netlify/functions/index?id=${eventId}`;
+      try {
+        setLoading(true);
+        const event = await fetch(url).then((res) => res.json());
+        setEvent(event.title);
+      } catch (err) {
+        console.log(err);
+      } finally {
+        setLoading(false);
+      }
     }
-  }, [])
+    fetchEvents();
+  }, [eventId]);
 
   return (
     <div>
