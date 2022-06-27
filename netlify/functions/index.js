@@ -1,11 +1,11 @@
-const axios = require('axios');
+const axios = require("axios");
 
 exports.handler = async function (event, context) {
   console.log(event);
   console.log(context);
   try {
     const { id } = event.queryStringParameters;
-    const response = await axios.get(`${}/${id}`);
+    const response = await axios.get(`${process.env.NASA_API_URL}/${id}`);
     return {
       statusCode: 200,
       body: JSON.stringify({ title: response.data.title }),

@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-// Render icons to map based on their id via https://eonet.gsfc.nasa.gov/api/v3/events
+// Render icons to map based on their id via NASA EONET API
 function Marker({ onClick, id }) {
   let renderIcon = null;
   if(id === "wildfires") {
