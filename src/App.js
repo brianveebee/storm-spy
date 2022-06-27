@@ -14,8 +14,8 @@ function App() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      setLoadingState(true);
-
+      setLoading(true);
+      
     }
   }, [])
 
