@@ -4711,10 +4711,10 @@
     "merge2" "^1.4.1"
     "slash" "^3.0.0"
 
-"google-map-react@^2.1.9":
-  "integrity" "sha512-//Pa0o6sdspU2H0ehVztSDQSnYYeV6TY4Z6ftty34yiCJYLliOzeq17dA9uFkyUFdL+XwbTU6e9mfs+bjBMIzw=="
-  "resolved" "https://registry.npmjs.org/google-map-react/-/google-map-react-2.1.9.tgz"
-  "version" "2.1.9"
+"google-map-react@^2.1.10":
+  "integrity" "sha512-cqW2EcygYqF26inp5liM/pAcCwOGXB9LW32oGwf931Iuq8tnasCpyEtq87G+RyQCKCo2P8/QyV+MGHuc7r9AEg=="
+  "resolved" "https://registry.npmjs.org/google-map-react/-/google-map-react-2.1.10.tgz"
+  "version" "2.1.10"
   dependencies:
     "@googlemaps/js-api-loader" "^1.7.0"
     "@mapbox/point-geometry" "^0.1.0"
