@@ -5,7 +5,6 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.27.2",
     "dotenv": "^16.0.1",
     "google-map-react": "^2.1.10",
     "react": "^17.0.2",
@@ -19,13 +18,15 @@
     "@iconify/icons-emojione": "^1.2.2",
     "@iconify/react": "^3.2.2",
     "@testing-library/react": "^11.1.0",
+    "axios": "^0.27.2",
     "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "debug": "netlify dev --inspect"
   },
   "eslintConfig": {
     "extends": [
