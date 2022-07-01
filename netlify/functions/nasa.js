@@ -8,12 +8,12 @@ exports.handler = async function (event, context) {
     const response = await axios.get(`${process.env.NASA_API_URL}/${id}`);
     return {
       statusCode: 200,
-      body: JSON.stringify({ title: response.data.title }),
+      body: JSON.stringify({title: response.data.title})
     };
   } catch (err) {
     return { 
       statusCode: 404,
-      body: err.toString(),
+      body: err.toString()
     };
   }
 }

@@ -17,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const url = `/.netlify/functions/index?id=${eventId}`;
+      const url = `/netlify/functions/nasa?id=${eventId}`;
       try {
         setLoading(true);
         const event = await fetch(url).then((res) => res.json());
